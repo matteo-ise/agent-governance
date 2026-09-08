@@ -85,6 +85,14 @@ if (decision === 'require_approval') {
 - Financial Controls (Ausgabenlimits)
 - Procurement (Vendor Restrictions)
 
+
+## 🚀 Quantum Leap Architecture: OPA & Merkle Tree Logs
+
+YAML ist zu schwach für echte Compliance. Wir bringen Cloud-Native Security in die Agenten-Welt:
+- **Open Policy Agent (OPA/Rego):** Industriestandard für komplexe Entscheidungsbäume.
+- **Cryptographic Receipts:** Jede Entscheidung wird als Hash in einen Append-Only Merkle Tree geschrieben. Manipulationssicher, auditierbar, CISO-approved.
+
+
 ---
 
 **Teil des Agentic Commerce Stack von Matteo Ise:**
