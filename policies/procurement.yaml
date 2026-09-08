@@ -1,0 +1,13 @@
+policies:
+  - id: procurement-vendor-restriction
+    name: "Procurement: Vendor Restriction"
+    description: "Only approved vendors can be contracted automatically"
+    conditions:
+      - field: "$.action"
+        operator: "eq"
+        value: "contract:sign"
+      - field: "$.input.vendor_status"
+        operator: "ne"
+        value: "approved"
+    action: require_approval
+    priority: 80

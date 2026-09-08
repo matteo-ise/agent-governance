@@ -1,0 +1,10 @@
+policies:
+  - id: eu-ai-act-transparency
+    name: "EU AI Act: Transparency Obligation"
+    description: "Ensure counterparty is notified they are interacting with an AI (Art. 50)"
+    conditions:
+      - field: "$.action"
+        operator: "contains"
+        value: "communication:external"
+    action: log_only
+    priority: 100

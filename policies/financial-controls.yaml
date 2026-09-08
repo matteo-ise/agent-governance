@@ -1,0 +1,26 @@
+policies:
+  - id: financial-limit-1000
+    name: "Finanzielles Limit (1000 EUR)"
+    description: "Genehmigung erforderlich für Transaktionen über 1000 EUR"
+    conditions:
+      - field: "$.action"
+        operator: "eq"
+        value: "payment:initiate"
+      - field: "$.input.amount"
+        operator: "gt"
+        value: 1000
+    action: require_approval
+    priority: 100
+
+  - id: financial-limit-10000
+    name: "Finanzielles Limit (10000 EUR)"
+    description: "Transaktionen über 10000 EUR sind strikt untersagt"
+    conditions:
+      - field: "$.action"
+        operator: "eq"
+        value: "payment:initiate"
+      - field: "$.input.amount"
+        operator: "gt"
+        value: 10000
+    action: deny
+    priority: 200

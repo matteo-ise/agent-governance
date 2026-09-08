@@ -1,0 +1,13 @@
+policies:
+  - id: gdpr-data-minimization
+    name: "DSGVO: Data Minimization"
+    description: "Prevent agents from querying excessive PII data"
+    conditions:
+      - field: "$.action"
+        operator: "eq"
+        value: "database:query"
+      - field: "$.input.fields"
+        operator: "contains"
+        value: "social_security_number"
+    action: require_approval
+    priority: 90
