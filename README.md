@@ -7,6 +7,12 @@
 </div>
 
 
+> [!NOTE]
+> **Proof of Concept & Infrastructure Blueprint**  
+> Dieses Repository ist Teil einer konzeptionellen Infrastruktur für Agentic Commerce. Es dient als **Proof of Concept (PoC)** und Framework-Vorlage. Der Code ist experimentell und soll Entwicklern als Ausgangspunkt dienen, um eigene M2M- und Agenten-Systeme weiterzuentwickeln. Es handelt sich noch nicht um ein finales, produktionsreifes Release.
+
+
+
 > Autonome Agenten brauchen Regeln. Nicht als Afterthought — als Fundament.
 
 Was ISO 27001 für IT-Security ist, wird **agent-governance** für Agent-Operationen: das Framework das Unternehmen brauchen, bevor sie den ersten Agenten produktiv einsetzen. 
@@ -85,12 +91,6 @@ if (decision === 'require_approval') {
 - Financial Controls (Ausgabenlimits)
 - Procurement (Vendor Restrictions)
 
-
-## 🚀 Quantum Leap Architecture: OPA & Merkle Tree Logs
-
-YAML ist zu schwach für echte Compliance. Wir bringen Cloud-Native Security in die Agenten-Welt:
-- **Open Policy Agent (OPA/Rego):** Industriestandard für komplexe Entscheidungsbäume.
-- **Cryptographic Receipts:** Jede Entscheidung wird als Hash in einen Append-Only Merkle Tree geschrieben. Manipulationssicher, auditierbar, CISO-approved.
 
 
 ---
